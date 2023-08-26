@@ -1,2 +1,0 @@
-# StarrySkyMinecraftLauncher-Public
-StarrySkyMinecraftLauncher-Public
