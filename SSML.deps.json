@@ -10,8 +10,9 @@
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.2.1",
           "Microsoft.Extensions.Hosting": "7.0.1",
-          "MinecraftLaunch": "1.9.6-preview2",
-          "MinecraftOAuth": "1.9.6-preview3",
+          "MinecraftLaunch": "1.9.6-preview6",
+          "MinecraftLaunch.Skin": "1.0.0",
+          "MinecraftOAuth": "1.9.6-preview4",
           "Newtonsoft.Json": "13.0.3",
           "WPF-UI": "3.0.0-preview.4",
           "WindowsAPICodePack": "7.0.4"
@@ -44,14 +45,6 @@
           "lib/net6.0/Flurl.Http.dll": {
             "assemblyVersion": "4.0.0.0",
             "fileVersion": "4.0.0.0"
-          }
-        }
-      },
-      "JetBrains.Annotations/2022.3.1": {
-        "runtime": {
-          "lib/netstandard2.0/JetBrains.Annotations.dll": {
-            "assemblyVersion": "4242.42.42.42",
-            "fileVersion": "2022.3.1.0"
           }
         }
       },
@@ -391,12 +384,11 @@
       "Microsoft.NETCore.Platforms/7.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Win32.SystemEvents/7.0.0": {},
-      "MinecraftLaunch/1.9.6-preview2": {
+      "MinecraftLaunch/1.9.6-preview6": {
         "dependencies": {
-          "JetBrains.Annotations": "2022.3.1",
+          "Flurl.Http": "4.0.0-pre3",
           "MinecraftLaunch.NPinyin": "1.0.0",
           "MinecraftLaunch.PinyinConverter": "1.0.0",
-          "Natsurainko.Toolkits": "1.0.2",
           "NbtLib": "1.0.1"
         },
         "runtime": {
@@ -422,27 +414,27 @@
           }
         }
       },
-      "MinecraftOAuth/1.9.6-preview3": {
+      "MinecraftLaunch.Skin/1.0.0": {
         "dependencies": {
           "Flurl.Http": "4.0.0-pre3",
-          "MinecraftLaunch": "1.9.6-preview2"
+          "SixLabors.ImageSharp": "3.0.1"
+        },
+        "runtime": {
+          "lib/net7.0/MinecraftLaunch.Skin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MinecraftOAuth/1.9.6-preview4": {
+        "dependencies": {
+          "Flurl.Http": "4.0.0-pre3",
+          "MinecraftLaunch": "1.9.6-preview6"
         },
         "runtime": {
           "lib/net7.0/MinecraftOAuth.dll": {
             "assemblyVersion": "1.9.6.0",
             "fileVersion": "1.9.6.0"
-          }
-        }
-      },
-      "Natsurainko.Toolkits/1.0.2": {
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.3",
-          "System.Threading.Tasks.Dataflow": "6.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Natsurainko.Toolkits.dll": {
-            "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.2.0"
           }
         }
       },
@@ -504,6 +496,14 @@
       "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
+      "SixLabors.ImageSharp/3.0.1": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
       "System.Collections/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "7.0.0",
@@ -856,7 +856,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Threading.Tasks.Dataflow/6.0.0": {},
       "WindowsAPICodePack/7.0.4": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "7.0.0",
@@ -924,13 +923,6 @@
       "sha512": "sha512-2N01ftKNnl5dhPvEYITn+DhrPrpxL+i/725aBOJkLHAT3LdKliwnybJKDqUDVR8CbLgBf6IcfhYnaLU7fTq0dw==",
       "path": "flurl.http/4.0.0-pre3",
       "hashPath": "flurl.http.4.0.0-pre3.nupkg.sha512"
-    },
-    "JetBrains.Annotations/2022.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
-      "path": "jetbrains.annotations/2022.3.1",
-      "hashPath": "jetbrains.annotations.2022.3.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
       "type": "package",
@@ -1128,12 +1120,12 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
-    "MinecraftLaunch/1.9.6-preview2": {
+    "MinecraftLaunch/1.9.6-preview6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kaVjOyVbk4k5dxEDxUYyEGIh/tYKMqnIeEhbecbnFCWy+414fQLgZ5sOiNRafpbKEkyFF8Udn3wHRixJy4GNSQ==",
-      "path": "minecraftlaunch/1.9.6-preview2",
-      "hashPath": "minecraftlaunch.1.9.6-preview2.nupkg.sha512"
+      "sha512": "sha512-fcvhdwmpMKN4UOLwvlzJpDNYPw2WMoFFenbIGZmT66FONoG1noTL3QzzVj7Wi1zhvP1G+kpZ2D2kGOGoMOq0lQ==",
+      "path": "minecraftlaunch/1.9.6-preview6",
+      "hashPath": "minecraftlaunch.1.9.6-preview6.nupkg.sha512"
     },
     "MinecraftLaunch.NPinyin/1.0.0": {
       "type": "package",
@@ -1149,19 +1141,19 @@
       "path": "minecraftlaunch.pinyinconverter/1.0.0",
       "hashPath": "minecraftlaunch.pinyinconverter.1.0.0.nupkg.sha512"
     },
-    "MinecraftOAuth/1.9.6-preview3": {
+    "MinecraftLaunch.Skin/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9hPhDExoKFHz1srHkCX6t/11TDVE776A5YHlg/fLh1BVhb+MO+F2rwnKOZX755clXa5+R5J9dBHI8iPndOueMw==",
-      "path": "minecraftoauth/1.9.6-preview3",
-      "hashPath": "minecraftoauth.1.9.6-preview3.nupkg.sha512"
+      "sha512": "sha512-KXOCpv9B+idh3hn7m6VXlkzyAYkJdlE0i5puWDSGsgrBONxAwBHJyoyvGedItkyKSq6YqPqnhtb0XpXMevGu6w==",
+      "path": "minecraftlaunch.skin/1.0.0",
+      "hashPath": "minecraftlaunch.skin.1.0.0.nupkg.sha512"
     },
-    "Natsurainko.Toolkits/1.0.2": {
+    "MinecraftOAuth/1.9.6-preview4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AuHxfQDqa4ARNyaibdCGRkLNFwVpLbW0/k8nW92hfLR96Pi4JvkOWtOLimkDcRfuc5LDUKV4wk4Yj1vnDoTpCA==",
-      "path": "natsurainko.toolkits/1.0.2",
-      "hashPath": "natsurainko.toolkits.1.0.2.nupkg.sha512"
+      "sha512": "sha512-3C5Fui/1l89ZOwKgSse7FIsmDVJSYARfBLbgmvAJyRBteUpH+xdUkUDFbi/2LPZGNMaGcuQ4H4Pz4mrzUETCCA==",
+      "path": "minecraftoauth/1.9.6-preview4",
+      "hashPath": "minecraftoauth.1.9.6-preview4.nupkg.sha512"
     },
     "NbtLib/1.0.1": {
       "type": "package",
@@ -1281,6 +1273,13 @@
       "sha512": "sha512-leXiwfiIkW7Gmn7cgnNcdtNAU70SjmKW3jxGj1iKHOvdn0zRWsgv/l2OJUO5zdGdiv2VRFnAsxxhDgMzofPdWg==",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.2",
       "hashPath": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o0v/J6SJwp3RFrzR29beGx0cK7xcMRgOyIuw8ZNLQyNnBhiyL/vIQKn7cfycthcWUPG3XezUjFwBWzkcUUDFbg==",
+      "path": "sixlabors.imagesharp/3.0.1",
+      "hashPath": "sixlabors.imagesharp.3.0.1.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",
@@ -1533,13 +1532,6 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
-    },
-    "System.Threading.Tasks.Dataflow/6.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+tyDCU3/B1lDdOOAJywHQoFwyXIUghIaP2BxG79uvhfTnO+D9qIgjVlL/JV2NTliYbMHpd6eKDmHp2VHpij7MA==",
-      "path": "system.threading.tasks.dataflow/6.0.0",
-      "hashPath": "system.threading.tasks.dataflow.6.0.0.nupkg.sha512"
     },
     "WindowsAPICodePack/7.0.4": {
       "type": "package",
