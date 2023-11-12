@@ -1,4 +1,5 @@
 # 星空我的世界启动器 | Starrt Sky Minecraft Launcher
+![](https://picst.sunbangyan.cn/2023/11/12/d8f86f0f95aa8046b1b7cd8000668682.png)
 ### 是时候把Readme加上了
 ## 介绍
 还没写
