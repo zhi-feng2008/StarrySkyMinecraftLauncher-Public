@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "SSML/1.0.0": {
+      "SSML/0.3.4.7": {
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.2.1",
           "Microsoft.Extensions.Hosting": "7.0.1",
-          "MinecraftLaunch": "1.9.6-preview6",
+          "MinecraftLaunch": "2.0.1",
           "MinecraftLaunch.Skin": "1.0.0",
-          "MinecraftOAuth": "1.9.6-preview4",
+          "MinecraftOAuth": "2.0.1",
           "Newtonsoft.Json": "13.0.3",
           "WPF-UI": "3.0.0-preview.4",
           "WindowsAPICodePack": "7.0.4"
@@ -384,7 +384,7 @@
       "Microsoft.NETCore.Platforms/7.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Win32.SystemEvents/7.0.0": {},
-      "MinecraftLaunch/1.9.6-preview6": {
+      "MinecraftLaunch/2.0.1": {
         "dependencies": {
           "Flurl.Http": "4.0.0-pre3",
           "MinecraftLaunch.NPinyin": "1.0.0",
@@ -393,8 +393,8 @@
         },
         "runtime": {
           "lib/net7.0/MinecraftLaunch.dll": {
-            "assemblyVersion": "1.9.6.0",
-            "fileVersion": "1.9.6.0"
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
           }
         }
       },
@@ -426,15 +426,15 @@
           }
         }
       },
-      "MinecraftOAuth/1.9.6-preview4": {
+      "MinecraftOAuth/2.0.1": {
         "dependencies": {
           "Flurl.Http": "4.0.0-pre3",
-          "MinecraftLaunch": "1.9.6-preview6"
+          "MinecraftLaunch": "2.0.1"
         },
         "runtime": {
           "lib/net7.0/MinecraftOAuth.dll": {
-            "assemblyVersion": "1.9.6.0",
-            "fileVersion": "1.9.6.0"
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
           }
         }
       },
@@ -898,7 +898,7 @@
     }
   },
   "libraries": {
-    "SSML/1.0.0": {
+    "SSML/0.3.4.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1120,12 +1120,12 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
-    "MinecraftLaunch/1.9.6-preview6": {
+    "MinecraftLaunch/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fcvhdwmpMKN4UOLwvlzJpDNYPw2WMoFFenbIGZmT66FONoG1noTL3QzzVj7Wi1zhvP1G+kpZ2D2kGOGoMOq0lQ==",
-      "path": "minecraftlaunch/1.9.6-preview6",
-      "hashPath": "minecraftlaunch.1.9.6-preview6.nupkg.sha512"
+      "sha512": "sha512-gw316b1jD8V2gAdT1j9OSMD2RpvdOWU7wiUjhXVwiwWXZK0S+lvaFH+2oVfvzXpfdXtdvE/1YjgDvCiD59buZA==",
+      "path": "minecraftlaunch/2.0.1",
+      "hashPath": "minecraftlaunch.2.0.1.nupkg.sha512"
     },
     "MinecraftLaunch.NPinyin/1.0.0": {
       "type": "package",
@@ -1148,12 +1148,12 @@
       "path": "minecraftlaunch.skin/1.0.0",
       "hashPath": "minecraftlaunch.skin.1.0.0.nupkg.sha512"
     },
-    "MinecraftOAuth/1.9.6-preview4": {
+    "MinecraftOAuth/2.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3C5Fui/1l89ZOwKgSse7FIsmDVJSYARfBLbgmvAJyRBteUpH+xdUkUDFbi/2LPZGNMaGcuQ4H4Pz4mrzUETCCA==",
-      "path": "minecraftoauth/1.9.6-preview4",
-      "hashPath": "minecraftoauth.1.9.6-preview4.nupkg.sha512"
+      "sha512": "sha512-O8+ROtebwHeZNuGb0LjlK0uQwMUITrWO7olmkysi8GOYGuvMJ/BNEM1N+1LbbyFuCN75tfgN3c5Ax94hDe14uA==",
+      "path": "minecraftoauth/2.0.1",
+      "hashPath": "minecraftoauth.2.0.1.nupkg.sha512"
     },
     "NbtLib/1.0.1": {
       "type": "package",
